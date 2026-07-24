@@ -337,3 +337,154 @@ button:active{
     3px solid rgba(255,255,255,.2);
 
 }
+/*======================================
+    EQUIPMENT
+======================================*/
+
+ul{
+
+    list-style:none;
+
+    width:min(520px,92vw);
+
+    margin:35px auto;
+
+    padding:0;
+
+}
+
+ul li{
+
+    padding:18px 24px;
+
+    margin:14px 0;
+
+    border-left:4px solid var(--orange);
+
+    background:rgba(255,255,255,.04);
+
+    text-align:left;
+
+    letter-spacing:2px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+ul li:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 0 20px rgba(255,147,0,.25);
+
+}
+
+.ready{
+
+    margin-top:18px;
+
+    color:var(--green);
+
+    font-size:20px;
+
+    letter-spacing:5px;
+
+    text-shadow:0 0 12px rgba(0,255,136,.5);
+
+}
+
+/*======================================
+    STANDING BY / COMPLETE
+======================================*/
+
+.center{
+
+    justify-content:center;
+
+}
+
+#standText,
+#completeText{
+
+    font-size:58px;
+
+    letter-spacing:8px;
+
+    color:var(--orange);
+
+    text-shadow:
+        0 0 15px rgba(255,147,0,.8),
+        0 0 35px rgba(255,147,0,.4);
+
+}
+
+/*======================================
+    BIRTHDAY
+======================================*/
+
+#birthday{
+
+    background:
+    radial-gradient(circle,#221300 0%,#0d0d0d 70%,#000 100%);
+
+}
+
+#birthday h1{
+
+    margin-bottom:30px;
+
+}
+
+#birthday h2{
+
+    margin-bottom:35px;
+
+}
+
+#birthday p{
+
+    max-width:560px;
+
+    line-height:2.2;
+
+    color:#ececec;
+
+    margin:15px auto;
+
+}
+
+.love{
+
+    margin-top:45px;
+
+    color:#ffd28c;
+
+    font-size:26px;
+
+    letter-spacing:4px;
+
+}
+
+.mission{
+
+    margin-top:50px;
+
+    font-size:14px;
+
+    letter-spacing:6px;
+
+    color:#888;
+
+}
+
+/*======================================
+    HIDDEN
+======================================*/
+
+.hidden{
+
+    display:none;
+
+}
