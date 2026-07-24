@@ -166,3 +166,174 @@ h2{
     margin-bottom:30px;
 
 }
+/*======================================
+    USER CARD
+======================================*/
+
+.line{
+
+    font-size:40px;
+
+    margin:10px 0;
+
+    letter-spacing:4px;
+
+    color:#fff;
+
+}
+
+.jp{
+
+    color:#9b9b9b;
+
+    letter-spacing:5px;
+
+    margin-bottom:35px;
+
+    font-size:15px;
+
+}
+
+.card{
+
+    width:min(500px,92vw);
+
+    border:
+
+    1px solid rgba(255,147,0,.45);
+
+    background:
+
+    rgba(255,255,255,.03);
+
+    border-radius:14px;
+
+    padding:28px;
+
+    box-shadow:
+
+    0 0 18px rgba(255,147,0,.12);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.08);
+
+}
+
+.row:last-child{
+
+    border:none;
+
+}
+
+.green{
+
+    color:var(--green);
+
+    text-shadow:
+
+    0 0 10px rgba(0,255,136,.5);
+
+}
+
+/*======================================
+    BUTTON
+======================================*/
+
+button{
+
+    margin-top:45px;
+
+    padding:
+
+    16px 40px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:
+
+    linear-gradient(
+
+        #ffb347,
+
+        #ff9300
+
+    );
+
+    color:#111;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 0 25px rgba(255,147,0,.28);
+
+}
+
+button:hover{
+
+    transform:
+
+    scale(1.05);
+
+    box-shadow:
+
+    0 0 35px rgba(255,147,0,.55);
+
+}
+
+button:active{
+
+    transform:
+
+    scale(.97);
+
+}
+
+/*======================================
+    555 DRIVER
+======================================*/
+
+#driver{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    font-size:42px;
+
+    letter-spacing:2px;
+
+    margin-top:55px;
+
+    border:
+
+    3px solid rgba(255,255,255,.2);
+
+}
