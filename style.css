@@ -488,3 +488,138 @@ ul li:hover{
     display:none;
 
 }
+/*======================================
+    ANIMATIONS
+======================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 15px rgba(255,147,0,.15);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 35px rgba(255,147,0,.45),
+        0 0 60px rgba(255,147,0,.25);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 15px rgba(255,147,0,.15);
+
+    }
+
+}
+
+@keyframes scanMove{
+
+    from{
+
+        transform:translateY(-100%);
+
+    }
+
+    to{
+
+        transform:translateY(100%);
+
+    }
+
+}
+
+@keyframes pulseText{
+
+    0%{
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.5;
+
+    }
+
+}
+
+/*======================================
+    EFFECT
+======================================*/
+
+.screen.active{
+
+    animation:fadeIn .55s ease;
+
+}
+
+.card{
+
+    animation:glow 3s infinite;
+
+}
+
+#driver{
+
+    animation:glow 2.4s infinite;
+
+}
+
+.ready{
+
+    animation:pulseText 2s infinite;
+
+}
+
+#standText{
+
+    animation:pulseText 1.2s infinite;
+
+}
+
+#completeText{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.love{
+
+    animation:fadeIn 2s ease;
+
+}
+
+.mission{
+
+    opacity:.65;
+
+}
