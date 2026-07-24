@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SMART BRAIN Terminal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="scan"></div>
+
+<div id="terminal">
+
+    <!-- Boot -->
+
+    <section class="screen active" id="boot">
+
+        <h1>SMART BRAIN</h1>
+
+        <h2>SECURITY TERMINAL</h2>
+
+        <div id="bootText"></div>
+
+        <button id="bootBtn" class="hidden">
+            ACCESS FILE
+        </button>
+
+    </section>
+
+    <!-- User -->
+
+    <section class="screen" id="user">
+
+        <div class="title">
+            AUTHORIZED USER
+        </div>
+
+        <div class="line">
+            戴崧原
+        </div>
+
+        <div class="jp">
+            たい すうげん
+        </div>
+
+        <div class="card">
+
+            <div class="row">
+
+                <span>USER ID</span>
+
+                <span>SB-555-0930</span>
+
+            </div>
+
+            <div class="row">
+
+                <span>STATUS</span>
+
+                <span class="green">
+                    ACTIVE
+                </span>
+
+            </div>
+
+        </div>
+
+        <button class="next">
+            CONTINUE
+        </button>
+
+    </section>
+
+    <!-- Equipment -->
+
+    <section class="screen" id="gear">
+
+        <div class="title">
+            AUTHORIZED EQUIPMENT
+        </div>
+
+        <ul>
+
+            <li>✓ FAIZ GEAR Ver.2</li>
+
+            <li>✓ FAIZ AXEL Ver.2</li>
+
+            <li>✓ FAIZ EDGE</li>
+
+        </ul>
+
+        <div class="ready">
+            SYSTEM READY
+        </div>
+
+        <button id="driver">
+            555
+        </button>
+
+    </section>
+
+    <!-- Standing By -->
+
+    <section class="screen center" id="standby">
+
+        <div id="standText">
+            Standing By...
+        </div>
+
+    </section>
+
+    <!-- Complete -->
+
+    <section class="screen center" id="complete">
+
+        <div id="completeText">
+            Complete.
+        </div>
+
+    </section>
+
+    <!-- Birthday -->
+
+    <section class="screen center" id="birthday">
+
+        <h1>Happy Birthday.</h1>
+
+        <h2>戴崧原</h2>
+
+        <p>
+
+            我想守護保有童心的你。
+
+        </p>
+
+        <p>
+
+            未來，
+            <br><br>
+
+            就讓我們一起守護
+            <br><br>
+
+            由我們創造出的夢想。
+
+        </p>
+
+        <div class="love">
+
+            Love,
+
+            <br>
+
+            雅筑 ❤️
+
+        </div>
+
+        <div class="mission">
+
+            MISSION COMPLETE
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
