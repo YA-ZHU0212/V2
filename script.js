@@ -1,75 +1,68 @@
-const screens = document.querySelectorAll(".screen");
-
-let current = 0;
-
-function show(index) {
-    screens[current].classList.remove("active");
-    current = index;
-    screens[current].classList.add("active");
-}
-
-/* ---------------- BOOT ---------------- */
-
-const bootText = document.getElementById("bootText");
+const output = document.getElementById("bootOutput");
+const cursor = document.getElementById("cursor");
 const bootBtn = document.getElementById("bootBtn");
 
 const bootLines = [
     "BOOTING SYSTEM...",
     "CONNECTING SMART BRAIN...",
-    "VERIFYING USER...",
+    "VERIFYING USER DATABASE...",
     "ACCESS GRANTED"
 ];
 
-let line = 0;
+let lineIndex = 0;
 
-function bootSequence() {
+function typeLine(text, callback){
 
-    if (line < bootLines.length) {
+    let i = 0;
 
-        bootText.innerHTML += bootLines[line] + "<br>";
+    const timer = setInterval(()=>{
 
-        line++;
+        output.innerHTML += text.charAt(i);
 
-        setTimeout(bootSequence, 700);
+        i++;
 
-    } else {
+        if(i >= text.length){
 
-        bootBtn.classList.remove("hidden");
+            clearInterval(timer);
 
-    }
+            output.innerHTML += "\n> ";
+
+            setTimeout(callback,500);
+
+        }
+
+    },40);
 
 }
 
-bootSequence();
+function nextLine(){
 
-/* ---------------- BUTTON ---------------- */
+    if(lineIndex >= bootLines.length){
 
-bootBtn.addEventListener("click", () => {
+        cursor.style.display="none";
 
-    show(1);
+        bootBtn.classList.remove("hidden");
 
-});
+        setTimeout(()=>{
 
-document.querySelector(".next").addEventListener("click", () => {
+            bootBtn.classList.add("show");
 
-    show(2);
+        },50);
 
-});
+        return;
 
-document.getElementById("driver").addEventListener("click", () => {
+    }
 
-    show(3);
+    typeLine(bootLines[lineIndex],()=>{
 
-    setTimeout(() => {
+        lineIndex++;
 
-        show(4);
+        nextLine();
 
-    }, 2200);
+    });
 
-    setTimeout(() => {
+}
 
-        show(5);
+output.innerHTML="> ";
 
-    }, 4200);
-
-});
+setTimeout(nextLine,800);
