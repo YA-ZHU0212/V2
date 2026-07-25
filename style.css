@@ -741,3 +741,82 @@ ul li:hover{
 /*======================================
     END
 ======================================*/
+/* ===========================
+   Module 1 Boot
+=========================== */
+
+#terminalBox{
+
+    margin-top:40px;
+
+    width:100%;
+
+    max-width:520px;
+
+    min-height:170px;
+
+    text-align:left;
+
+    margin-inline:auto;
+
+    border:1px solid rgba(255,140,0,.4);
+
+    padding:20px;
+
+    background:rgba(255,120,0,.05);
+
+    box-shadow:0 0 25px rgba(255,120,0,.15);
+
+    font-family:monospace;
+
+}
+
+#bootOutput{
+
+    line-height:2;
+
+    white-space:pre-wrap;
+
+    color:#ffd39a;
+
+}
+
+#cursor{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    color:#ff8c00;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+#bootBtn{
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+    transition:.4s;
+
+}
+
+#bootBtn.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
